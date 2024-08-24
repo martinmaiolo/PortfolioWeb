@@ -9,7 +9,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <section className="py-32 md:py-48 lg:py-60">
-      <div className="absolute inset-0 top-[80px] md:top-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
+      <div className="absolute inset-0 top-[80px] md:top-0 [mask-image:linear-gradient(to_bottom,transparent,black_5%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
         <div className="hero-ring size-[520px] md:size-[620px]"></div>
         <div className="hero-ring size-[620px] md:size-[820px]"></div>
@@ -19,7 +19,7 @@ export const HeroSection = () => {
           <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
         <HeroOrbit size={550} rotation={20}>
-          <StarIcon className="mt-16 md:mt-0 ml-16 md:ml-0 size-12 text-emerald-300" />
+          <StarIcon className="mt-14 md:mt-0 ml-16 md:ml-0 size-12 text-emerald-300" />
         </HeroOrbit>
         <HeroOrbit size={590} rotation={98}>
           <StarIcon className="size-8 text-emerald-300" />
@@ -28,7 +28,7 @@ export const HeroSection = () => {
           <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={440} rotation={79}>
-          <SparkleIcon className="mt-14 md:mt-0 -ml-16 md:ml-0 size-5 text-emerald-300/20" />
+          <SparkleIcon className="mt-14 md:mt-0 -ml-14 md:ml-0 size-5 text-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={530} rotation={178}>
           <SparkleIcon className="size-10 text-emerald-300/20" />
