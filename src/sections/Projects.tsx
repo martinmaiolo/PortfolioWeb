@@ -13,7 +13,7 @@ const portfolioProjects = [
     title: "Web Servicios Astrales",
     results: [
       { title: "Desarrollo y diseño mejorado 50%" },
-      { title: "Valocidad del sitio mejorada 50%" },
+      { title: "Velocidad del sitio mejorada 50%" },
       { title: "Incremento del trafico 35%" },
     ],
     link: "#",
@@ -38,7 +38,7 @@ const portfolioProjects = [
     results: [
       { title: "Fidelizacion clientes mejorada 40%" },
       { title: "Eficiencia recepcion mejorada 50%" },
-      { title: "Experiencia de usuario aumenta 35%" },
+      { title: "Experiencia usuario aumentada 35%" },
     ],
     link: "#",
     image: cedronEs,
