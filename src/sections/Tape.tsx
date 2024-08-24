@@ -1,3 +1,9 @@
 export const TapeSection = () => {
-  return <div>Tape Section</div>;
+  return (
+    <section className="">
+      <div className="container">
+        <div></div>
+      </div>
+    </section>
+  );
 };

@@ -38,5 +38,11 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+  return (
+    <section className="">
+      <div className="container">
+        <div></div>
+      </div>
+    </section>
+  );
 };

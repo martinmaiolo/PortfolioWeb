@@ -1,3 +1,9 @@
 export const ContactSection = () => {
-  return <div>Contact Section</div>;
+  return (
+    <section className="">
+      <div className="container">
+        <div></div>
+      </div>
+    </section>
+  );
 };
