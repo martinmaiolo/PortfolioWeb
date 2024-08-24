@@ -11,10 +11,10 @@ export const HeroSection = () => {
     <section className="py-32 md:py-48 lg:py-60">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
-        <div className="hero-ring size-[420px] md:size-[620px]"></div>
-        <div className="hero-ring size-[620px] md:size-[820px]"></div>
-        <div className="hero-ring size-[820px] md:size-[1020px]"></div>
-        <div className="hero-ring size-[1020px] md:size-[1220px]"></div>
+        <div className="hero-ring size-[520px] md:size-[620px]"></div>
+        <div className="hero-ring size-[720px] md:size-[820px]"></div>
+        <div className="hero-ring size-[920px] md:size-[1020px]"></div>
+        <div className="hero-ring size-[1120px] md:size-[1220px]"></div>
         <HeroOrbit size={800} rotation={-72}>
           <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
