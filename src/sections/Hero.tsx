@@ -47,7 +47,7 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
       <div className="container">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center relative z-10">
           <Image src={memojiImage} alt="Person peeking from behind laptop" className="size-[100px]" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full"></div>
