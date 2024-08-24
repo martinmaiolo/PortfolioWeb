@@ -9,13 +9,14 @@ const words = [
   "Faciles de usar",
   "Mantenibles",
   "Confiables",
-  "Interactivas",
+  "Confiables",
+  "Responsivas",
 ];
 
 export const TapeSection = () => {
   return (
-    <section className="py-16 lg:py-24">
-      <div className="bg-gradient-to-r from-emerald-300 to-sky-400 overflow-x-clip -rotate-3 -mx-1">
+    <section className="py-16 lg:py-24 overflow-x-clip">
+      <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
         <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <div className="flex flex-none gap-4 py-3">
             {words.map((word) => (
@@ -25,7 +26,6 @@ export const TapeSection = () => {
               </div>
             ))}
           </div>
-          \
         </div>
       </div>
     </section>
