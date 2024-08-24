@@ -9,12 +9,12 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <section className="py-32 md:py-48 lg:py-60">
-      <div className="absolute inset-0 top-12 md:top-0 md:[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
+      <div className="absolute inset-0 top-16 md:top-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
         <div className="hero-ring size-[520px] md:size-[620px]"></div>
-        <div className="hero-ring size-[720px] md:size-[820px]"></div>
-        <div className="hero-ring size-[920px] md:size-[1020px]"></div>
-        <div className="hero-ring size-[1120px] md:size-[1220px]"></div>
+        <div className="hero-ring size-[620px] md:size-[820px]"></div>
+        <div className="hero-ring size-[720px] md:size-[1020px]"></div>
+        <div className="hero-ring size-[8120px] md:size-[1220px]"></div>
         <HeroOrbit size={800} rotation={-72}>
           <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
