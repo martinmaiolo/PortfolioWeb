@@ -9,7 +9,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <section className="py-32 md:py-48 lg:py-60">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
+      <div className="absolute inset-0 top-10 md:top-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
         <div className="hero-ring size-[520px] md:size-[620px]"></div>
         <div className="hero-ring size-[720px] md:size-[820px]"></div>
