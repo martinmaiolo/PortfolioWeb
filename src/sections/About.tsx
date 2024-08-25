@@ -3,39 +3,47 @@ import { Card } from "@/components/Card";
 import StarIcon from "@/assets/icons/star.svg";
 import Image from "next/image";
 import bookImage from "@/assets/images/book-cover.png";
+import Php from "@/assets/icons/php.svg";
+import Html5 from "@/assets/icons/html5.svg";
+import Css3 from "@/assets/icons/css3.svg";
+import Salesforce from "@/assets/icons/salesforce.svg";
+import Chatgpt from "@/assets/icons/chatgpt.svg";
+import Wordpress from "@/assets/icons/wordpress.svg";
+import Elementor from "@/assets/icons/elementor.svg";
+import Seo from "@/assets/icons/seo.svg";
 
 const toolboxItems = [
   {
     title: "PHP",
-    icon: "",
+    icon: <Php />,
   },
   {
     title: "HTML5",
-    icon: "",
+    icon: <Html5 />,
   },
   {
     title: "CSS",
-    icon: "",
+    icon: <Css3 />,
   },
   {
     title: "Salesforce",
-    icon: "",
+    icon: <Salesforce />,
   },
   {
     title: "ChatGPT",
-    icon: "",
+    icon: <Chatgpt />,
   },
   {
     title: "Wordpress",
-    icon: "",
+    icon: <Wordpress />,
   },
   {
     title: "Elementor",
-    icon: "",
+    icon: <Elementor />,
   },
   {
     title: "SEO",
-    icon: "",
+    icon: <Seo />,
   },
 ];
 
