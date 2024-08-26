@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({ subsets: ["latin"], variable: "--font-serif", weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with love",
+  title: "Martin Maiolo",
+  description: "Bienvenido a mi Web Portfolio, en donde encontraras toda la informacion que necesitas sobre mi!",
 };
 
 export default function RootLayout({

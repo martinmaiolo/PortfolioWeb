@@ -12,8 +12,7 @@ import Chatgpt from "@/assets/icons/chatgpt.svg";
 import Wordpress from "@/assets/icons/wordpress.svg";
 import Elementor from "@/assets/icons/elementor.svg";
 import Seo from "@/assets/icons/seo.svg";
-import { TechIcon } from "@/components/TechIcon";
-import mapImage from "@/assets/images/map.png";
+import mapImage from "@/assets/images/map.jpg";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import natacion from "@/assets/images/natacion.png";
 import ciclismo from "@/assets/images/ciclismo.png";
@@ -147,7 +146,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                    className="cursor-pointer inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{ left: hobby.left, top: hobby.top }}
                     drag
                     dragConstraints={constrainRef}
@@ -159,7 +158,7 @@ export const AboutSection = () => {
               </div>
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image src={mapImage} alt="Map Location" className="h-full w-full object-cover" />
+              <Image src={mapImage} alt="Map Location" className="h-full w-full object-cover object-right-bottom" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animationDuration:2s]">
                   {" "}

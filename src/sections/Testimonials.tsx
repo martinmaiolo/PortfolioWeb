@@ -64,11 +64,11 @@ export const TestimonialsSection = () => {
                         <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
                       </div>
                       <div>
-                        <div className="font-semibold">{testimonial.name}</div>
-                        <div className="text-sm text-white/40">{testimonial.position}</div>
+                        <div className="font-semibold pointer-events-none">{testimonial.name}</div>
+                        <div className="text-sm text-white/40 pointer-events-none">{testimonial.position}</div>
                       </div>
                     </div>
-                    <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
+                    <p className="mt-4 md:mt-6 text-sm md:text-base pointer-events-none">{testimonial.text}</p>
                   </Card>
                 ))}
               </Fragment>
