@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bgBlur {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);

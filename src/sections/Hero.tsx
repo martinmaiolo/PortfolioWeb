@@ -1,5 +1,6 @@
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
+import Link from "next/link";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
@@ -9,8 +10,8 @@ import Hand from "@/assets/images/saludo.png";
 
 export const HeroSection = () => {
   return (
-    <section className="py-32 md:py-48 lg:py-60">
-      <div className="absolute inset-0 top-[80px] md:top-0 [mask-image:linear-gradient(to_bottom,transparent,black_9%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]  overflow-x-clip">
+    <section id="hero" className="py-32 md:py-48 lg:py-60">
+      <div className="absolute inset-0 top-[80px] md:top-0 [mask-image:linear-gradient(to_bottom,transparent,black_9%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] overflow-x-clip -z-10">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
         <div className="hero-ring size-[520px] md:size-[620px]"></div>
         <div className="hero-ring size-[620px] md:size-[820px]"></div>
@@ -66,15 +67,22 @@ export const HeroSection = () => {
             cosas.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explora Mi Trabajo</span>
-            <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
-            <Image src={Hand} alt="saludo" className="size-6" />
-            <span className="font-semibold">Conecta Conmigo</span>
-          </button>
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-10">
+          <a href="#projects">
+            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+              <span className="font-semibold">Explora Mi Trabajo</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </a>
+          <Link
+            href="https://wa.me/34613765894?text=Hola%20Martin%20%F0%9F%91%8B%20Acabo%20de%20ver%20tu%20portfolio%20y%20tengo%20un%20proyecto%20en%20mente%3A"
+            target="_blank"
+          >
+            <button className="cursor-pointer inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+              <Image src={Hand} alt="saludo" className="size-6" />
+              <span className="font-semibold">Conecta Conmigo</span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

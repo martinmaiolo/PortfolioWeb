@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import mamaEstelar from "@/assets/images/mamaEstelar.png";
@@ -17,7 +18,7 @@ const portfolioProjects = [
       { title: "Velocidad del sitio mejorada 50%" },
       { title: "Incremento del trafico 35%" },
     ],
-    link: "#",
+    link: "https://mamaestelar.com/",
     image: mamaEstelar,
   },
   {
@@ -29,7 +30,7 @@ const portfolioProjects = [
       { title: "Alcance de nuevos clientes 35%" },
       { title: "Posicionamiento SEO mejorado 15%" },
     ],
-    link: "#",
+    link: "https://multiply.college/",
     image: mutiplySchool,
   },
   {
@@ -41,14 +42,14 @@ const portfolioProjects = [
       { title: "Eficiencia recepcion mejorada 50%" },
       { title: "Experiencia usuario aumentada 35%" },
     ],
-    link: "#",
+    link: "https://cedron.es/",
     image: cedronEs,
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           text={"Resultados High-level"}
@@ -82,12 +83,12 @@ export const ProjectsSection = () => {
                       </ul>
                     ))}
 
-                    <a href={project.link}>
+                    <Link href={project.link} target="_blank">
                       <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
                         <span>Visitar Sitio Web</span>
                         <ArrowUpRightIcon className="size-4" />
                       </button>
-                    </a>
+                    </Link>
                   </div>
                   <div className="relative">
                     <Image
