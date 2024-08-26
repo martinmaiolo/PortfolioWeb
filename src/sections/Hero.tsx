@@ -20,7 +20,7 @@ export const HeroSection = () => {
           <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={440} rotation={79} shouldOrbit orbitDuration="32s" shouldSpin spinDuration="3s">
-          <SparkleIcon className="mt-14 md:mt-0 -ml-14 md:ml-0 size-5 text-emerald-300/20" />
+          <SparkleIcon className="size-5 text-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
           <div className="size-2 rounded-full bg-emerald-300/20"></div>
@@ -29,7 +29,7 @@ export const HeroSection = () => {
           <SparkleIcon className="size-10 text-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={550} rotation={20} shouldOrbit orbitDuration="38s" shouldSpin spinDuration="6s">
-          <StarIcon className="mt-14 md:mt-0 ml-16 md:ml-0 size-12 text-emerald-300" />
+          <StarIcon className="size-12 text-emerald-300" />
         </HeroOrbit>
         <HeroOrbit size={590} rotation={98} shouldOrbit orbitDuration="40s" shouldSpin spinDuration="6s">
           <StarIcon className="size-8 text-emerald-300" />
