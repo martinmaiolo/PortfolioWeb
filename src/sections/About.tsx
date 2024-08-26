@@ -128,11 +128,14 @@ export const AboutSection = () => {
                 title="Mis Herramientas"
                 description="Explora las tecnologia que utilizo para crear expecionales experiencias digitales."
               />
-              <ToolboxIcons items={toolboxItems} itemsWrapperClassName="animate-move-left [animationDuration:40s]" />
+              <ToolboxIcons
+                items={toolboxItems}
+                itemsWrapperClassName="animate-move-left [animationDuration:40s] will-change-transform"
+              />
               <ToolboxIcons
                 items={toolboxItems}
                 className="mt-6"
-                itemsWrapperClassName="animate-move-right [animationDuration:30s]"
+                itemsWrapperClassName="animate-move-right [animationDuration:30s] will-change-transform"
               />
             </Card>
           </div>
