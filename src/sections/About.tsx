@@ -139,8 +139,8 @@ export const AboutSection = () => {
           <div className="grid grid-cols-1 space-y-8 md:grid-cols-5 md:space-y-0 md:gap-8 lg:grid-cols-3">
             <Card className="h-[320px] flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="Detras del Codigo"
-                description="Explora todos mis intereses y hobbies detras del mundo digital."
+                title="Mis Hobbies"
+                description="Explora lo que soy detras del mundo digital. Clickealos y ordenalos como prefieras."
               />
               <div ref={constrainRef} className="flex-1 relative">
                 {hobbies.map((hobby) => (
