@@ -116,7 +116,7 @@ export const AboutSection = () => {
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 space-y-8 md:grid-cols-5 md:space-y-0 md:gap-8 lg:grid-cols-3">
             <Card className="h-[320px] col-span-2 lg:col-span-1">
-              <CardHeader title="Logros" description="Las certificaciones que avalan mis conocimientos." />
+              <CardHeader title="Mis Logros" description="Las certificaciones que avalan mis conocimientos." />
               <div className="w-60 mx-auto mt-2 md:mt-0 ">
                 <Image src={salesforceAdmin} alt="salesforce certification" />
               </div>
