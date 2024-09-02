@@ -87,7 +87,10 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <meta name="author" content="Martin Maiolo" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <meta name="keywords" content="desarrollador web WordPress">
+        <link rel="canonical" href="https://martinmaiolo.es/">
         {/* Agrega el schema en formato JSON-LD */}
         <Script
           type="application/ld+json"
