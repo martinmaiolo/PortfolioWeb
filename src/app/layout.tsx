@@ -86,9 +86,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <meta name="author" content="Federico Di Nuzzo" />
+        <meta name="author" content="Martin Maiolo" />
         <meta name="robots" content="index, follow" />
         {/* Agrega el schema en formato JSON-LD */}
         <Script
