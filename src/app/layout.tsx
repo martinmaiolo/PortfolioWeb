@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({ subsets: ["latin"], variable: "--font-serif", weight: ["400"] });
@@ -14,9 +13,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://martinmaiolo.es"),
-  title: "▷ Desarrollador Web WordPress - Martin Maiolo",
-  description: "Portfolio y servicios de Martin Maiolo, desarrollador web especializado en WordPress.",
+  metadataBase: new URL("https://service-electrolux.ar"),
+  title:
+    "Martin Maiolo",
+  description:
+    "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -24,18 +25,23 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "es_ES",
-    images: "https://martinmaiolo.es/og-image.jpg",
-    url: "https://martinmaiolo.es/",
-    title: "▷ Desarrollador Web WordPress - Martin Maiolo",
-    description: "Portfolio y servicios de Martin Maiolo, desarrollador web especializado en WordPress.",
+    images:
+      "https://service-electrolux-f4204ruh5-fededinuzzos-projects.vercel.app/opengraph-image.jpg?405fc21523a0661c",
+    url: "https://service-electrolux.ar/",
+    title:
+      "▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA",
+    description:
+      "Service autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@martinmaiolo",
-    title: "▷ Desarrollador Web WordPress - Martin Maiolo",
-    description: "Portfolio y servicios de Martin Maiolo, desarrollador web especializado en WordPress.",
-    images: "https://martinmaiolo.es/twitter-image.jpg",
+    site: "service-electrolux",
+    title:
+      '▷ Service de Heladeras y Lavarropas ❄️ ELECTROLUX | Arreglos EN EL DÍA"',
+    description:
+      "ervice autorizado ELECTROLUX ✓ Ingresa y contactanos - Servicio Tecnico de heladeras y lavarropas ESPECIALIZADO y ¡Atendido por sus Dueños!",
+    images:
+      "https://service-electrolux-f4204ruh5-fededinuzzos-projects.vercel.app/opengraph-image.jpg?405fc21523a0661c",
   },
   robots: {
     index: true,
@@ -43,79 +49,39 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
     },
   },
   keywords: [
-    "desarrollador web",
-    "WordPress",
-    "Martin Maiolo",
-    "freelance",
-    "diseño web",
-    "SEO",
+    "servicio",
+    "service",
+    "electrolux",
+    "heladeras",
+    "lavarropas",
+    "reparacion",
+    "arreglo",
+    "tecnicos",
+    "asistencia",
+    "capital federal",
+    "zona norte",
+    "zona sur",
+    "servicio tecnico de heladeras y lavarropas electrolux",
+    "service de lavarropas y heladeras electrolux",
+    "reparacion de heladeras y lavarropas electrlux",
   ],
-  creator: "Martin Maiolo",
+  creator: "Federico Di Nuzzo",
   generator: "Next.js",
   publisher: "Vercel",
   verification: {
-    google: "google-verification-code",
+    google: "google",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <head>
-        <meta name="author" content="Martin Maiolo" />
-        <link rel="canonical" href="https://martinmaiolo.es/" />
-        <Script
-          type="application/ld+json"
-          id="organization-schema"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Martin Maiolo - Desarrollo Web",
-              "url": "https://martinmaiolo.es",
-              "logo": "https://martinmaiolo.es/logo.png",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+54-123-456-7890",
-                "contactType": "Customer Service",
-                "areaServed": "AR",
-                "availableLanguage": "es",
-              },
-              "sameAs": [
-                "https://www.facebook.com/martinmaiolo",
-                "https://www.instagram.com/martinmaiolo",
-              ],
-            }),
-          }}
-        />
-        <Script
-          type="application/ld+json"
-          id="website-schema"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "url": "https://martinmaiolo.es",
-              "name": "Martin Maiolo - Desarrollo Web",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://martinmaiolo.es/?q={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
-      </head>
+    <html lang="en">
       <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antialiased font-sans")}>
         {children}
       </body>
